@@ -1,0 +1,21 @@
+.form-control {
+  &:focus {
+    border-color: var(--color-primary);
+  }
+}
+
+.form-group {
+  .form-label {
+    color: var(--color-dark-blue-1);
+    margin-bottom: var(--space-s);
+    font-size: var(--font-size-base);
+  }
+}
+
+.form-control {
+  padding: 20px 18px;
+  border: 1px solid #99ACB9;
+  border-radius: 4px;
+  color: var(--color-gray-1);
+  font-size: var(--font-size-base);
+}

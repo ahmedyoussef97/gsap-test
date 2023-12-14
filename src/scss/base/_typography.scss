@@ -1,0 +1,223 @@
+.font-size-display {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading4 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading5 {
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.heading6 {
+    font-size: var(--font-size-h6);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+}
+
+.font-size-xs {
+    font-size: var(--font-size-xs) !important;
+}
+
+.font-size-s {
+    font-size: var(--font-size-s) !important;
+}
+
+.font-size-base {
+    font-size: var(--font-size-base) !important;
+}
+
+.font-size-l {
+    font-size: var(--font-size-l) !important;
+}
+
+.font-size-xl {
+    font-size: var(--font-size-xl) !important;
+}
+
+.font-size-xxl {
+    font-size: var(--font-size-xxl) !important;
+}
+
+.font-size-h5 {
+    font-size: var(--font-size-h5) !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.font-light {
+    font-weight: var(--font-light);
+}
+
+.font-regular {
+    font-weight: var(--font-regular);
+}
+
+.font-semi-bold {
+    font-weight: var(--font-semi-bold);
+}
+
+.font-bold {
+    font-weight: var(--font-bold);
+}
+
+.bold {
+    font-weight: var(--font-bold);
+}
+
+
+
+@include breakpoint(isTablet) {
+    h1 {
+        font-size: calc(var(--font-size-h1) - 2px);
+    }
+
+    h2 {
+        font-size: calc(var(--font-size-h2) - 2px);
+    }
+
+    h3 {
+        font-size: calc(var(--font-size-h3) - 2px);
+    }
+
+    h4 {
+        font-size: calc(var(--font-size-h4) - 1px);
+    }
+
+    h5 {
+        font-size: calc(var(--font-size-h5) - 1px);
+    }
+
+    h6 {
+        font-size: calc(var(--font-size-h6) - 1px);
+    }
+
+    .font-size-display {
+        font-size: calc(var(--font-size-display) - 2px);
+    }
+
+    .heading1 {
+        font-size: calc(var(--font-size-h1) - 2px);
+    }
+
+    .heading2 {
+        font-size: calc(var(--font-size-h2) - 2px);
+    }
+
+    .heading3 {
+        font-size: calc(var(--font-size-h3) - 2px);
+    }
+
+    .heading4 {
+        font-size: calc(var(--font-size-h4) - 1px);
+    }
+
+    .heading5 {
+        font-size: calc(var(--font-size-h5) - 1px);
+    }
+
+    .heading6 {
+        font-size: calc(var(--font-size-h6) - 1px);
+    }
+}
+
+@include breakpoint(isMobile) {
+    h1 {
+        font-size: calc(var(--font-size-h1) - 4px);
+    }
+
+    h2 {
+        font-size: calc(var(--font-size-h2) - 4px);
+    }
+
+    h3 {
+        font-size: calc(var(--font-size-h3) - 4px);
+    }
+
+    h4 {
+        font-size: calc(var(--font-size-h4) - 2px);
+    }
+
+    h5 {
+        font-size: calc(var(--font-size-h5) - 2px);
+    }
+
+    h6 {
+        font-size: calc(var(--font-size-h6) - 2px);
+    }
+
+    .font-size-display {
+        font-size: calc(var(--font-size-display) - 4px);
+    }
+
+    .heading1 {
+        font-size: calc(var(--font-size-h1) - 4px);
+    }
+
+    .heading2 {
+        font-size: calc(var(--font-size-h2) - 4px);
+    }
+
+    .heading3 {
+        font-size: calc(var(--font-size-h3) - 4px);
+    }
+
+    .heading4 {
+        font-size: calc(var(--font-size-h4) - 2px);
+    }
+
+    .heading5 {
+        font-size: calc(var(--font-size-h5) - 2px);
+    }
+
+    .heading6 {
+        font-size: calc(var(--font-size-h6) - 2px);
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@500&amp;display=swap");
+
+.text-rtl {
+    font-family: 'Tajawal', sans-serif;
+}

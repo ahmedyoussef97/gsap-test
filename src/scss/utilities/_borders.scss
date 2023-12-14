@@ -1,0 +1,10 @@
+.border-radius-none { border-radius: var(--border-radius-none); }
+.border-radius-soft { border-radius: var(--border-radius-soft); }
+.border-radius-rounded { border-radius: var(--border-radius-rounded); }
+.border-radius-circle { border-radius: var(--border-radius-circle); }
+
+
+.border-size-none { border-width: var(--border-size-none); }
+.border-size-s { border: var(--border-size-s) solid currentColor; }
+.border-size-m {border: var(--border-size-m) solid currentColor; }
+.border-size-l { border: var(--border-size-l) solid currentColor; }

@@ -1,0 +1,1078 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" id="lang">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#0091EA" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./src/images/Favicon.svg" />
+    <title>
+        Emirates Loves
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+</head>
+
+<body class="body--flex">
+    <header class="main-header">
+        <div class="container main-header__container">
+            <button id="btnBurgerMenu" class="main-header__burger-menu material-icons">menu</button>
+            <h1 class="margin-none">
+                <span class="sr-only">Emirates</span>
+                <a href="./" title="Emirates logo" class="d-flex">
+                    <img src="./src/images/logo.svg" alt="" class="brand">
+                </a>
+            </h1>
+            <nav class="global-navigation">
+                <h2 class="sr-only">Main Navigation</h2>
+                <header class="global-navigation__header">
+                    <img src="./src/images/logo.svg" alt="" class="brand">
+                    <button id="btnCloseMenu" class="material-icons">close</button>
+                </header>
+                <ul class="navbar">
+                    <li class="navbar__item"><a href="./styles.html" class="navbar__link">Who Are We</a></li>
+                    <li class="navbar__item"><a href="./components.html" class="navbar__link">Types of Stories</a></li>
+                    <li class="navbar__item"><a href="./layouts.html" class="navbar__link">Countries</a></li>
+                    <li class="navbar__item"><a href="./icons.html" class="navbar__link">Events</a></li>
+                    <li class="navbar__item navbar__item--ar"><button class="navbar__link"
+                            onclick="ar()">العربية</button></li>
+                    <li class="navbar__item navbar__item--en"><button class="navbar__link"
+                            onclick="en()">English</button></li>
+                    <li class="navbar__item button--header-end"><a href="./icons.html"
+                            class="button button--primary">Tell Us Your Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="padding-top-l padding-bottom-l">
+        <div class="container">
+            <div class="hero">
+                <div class="row justify-content-between align-items-center reverse">
+                    <div class="col-md-6 col-12">
+                        <div class="hero__start">
+                            <div class="hero__content">
+                                <span class="hero__title my-element" id="quote">The Love Company</span>
+                                <div class="hero__description" id="hero__description">aims to amplify stories about
+                                    <span class="hero-line">PEOPLE</span>, the <span class="hero-spot">EMIRATES</span>,
+                                    and the
+                                    vibrant
+                                    and
+                                    diverse
+                                    <span class="hero-line">COMMUNITIES</span> that
+                                    thrive in it— a rich offering from the Emirates, to the world
+                                </div>
+                            </div>
+                            <div class="hero__action">
+                                <a href="" id="hero__button" class="hero__button button button--primary button--lg">Tell
+                                    Us Your Story</a>
+                                <div class="hero__action-items">
+                                    <svg width="115" height="53" viewBox="0 0 115 53" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="path2" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M114.378 52.7686C114.792 52.6915 115.064 52.2967 114.986 51.8866C113.41 43.5684 108.37 36.0739 101.884 29.9816C95.3957 23.8864 87.4132 19.1497 79.8532 16.3544C56.3366 7.65923 31.5613 6.21191 6.88498 5.38695C6.46457 5.3729 6.11227 5.69952 6.0981 6.11648C6.08393 6.53345 6.41325 6.88285 6.83367 6.89691C31.5143 7.72201 56.0621 9.17014 79.3211 17.7701C86.6988 20.498 94.5038 25.1294 100.837 31.0785C107.173 37.0304 111.99 44.2563 113.489 52.1657C113.567 52.5758 113.965 52.8457 114.378 52.7686Z"
+                                            fill="#668296" />
+                                        <path id="path3" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.8047 11.1031C10.1897 10.9351 10.3645 10.4893 10.1951 10.1074C9.91149 9.46813 9.57679 8.93341 9.12594 8.47606C8.67574 8.01938 8.14039 7.67098 7.49558 7.36558C5.45674 6.39993 3.18551 5.90163 1.06112 5.53836C0.64658 5.46747 0.252592 5.7433 0.18112 6.15443C0.109648 6.56557 0.387758 6.95632 0.802295 7.02721C2.89493 7.38504 4.99622 7.85606 6.83913 8.72892C7.37128 8.98096 7.74432 9.23566 8.03672 9.53227C8.32846 9.82821 8.57058 10.197 8.80079 10.7159C8.9702 11.0977 9.41966 11.2711 9.8047 11.1031Z"
+                                            fill="#668296" />
+                                        <path id="path1" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.0317555 6.44957C0.151582 6.84948 0.575599 7.07734 0.978825 6.9585C1.32329 6.85697 1.69488 6.75408 2.08435 6.64624C3.43058 6.27348 4.9905 5.84155 6.38234 5.20243C8.19825 4.36858 9.89956 3.11162 10.6111 0.994591C10.7441 0.598801 10.5284 0.170999 10.1294 0.0390677C9.7303 -0.0928626 9.29895 0.121039 9.16593 0.516829C8.64477 2.06748 7.38197 3.07852 5.74233 3.83143C4.47403 4.41382 3.08211 4.79982 1.75432 5.16803C1.34317 5.28205 0.938172 5.39436 0.544895 5.51027C0.141669 5.62912 -0.0880709 6.04965 0.0317555 6.44957Z"
+                                            fill="#668296" />
+                                    </svg>
+
+                                    <img src="./src/images/Be our next story.svg" alt=""
+                                        class="hero__action-image margin-start-l">
+                                    <img src="./src/images/arrow-Be-our-next-story-ar.svg" alt=""
+                                        class="hero__action-icon--ar">
+                                    <img src="./src/images/Be-our-next-story-ar.svg" alt=""
+                                        class="hero__action-icon--ar hero__action-image margin-start-l">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 hero__end-column">
+                        <svg class="heart" width="362" height="299" viewBox="0 0 362 299" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.8">
+                                <path
+                                    d="M95.3365 1.29443C67.8019 1.29443 34.1484 13.8624 14.2622 54.7083C-5.62395 95.5541 -2.56452 141.113 32.6187 189.814C67.8019 239.3 125.931 274.648 125.931 274.648C125.931 274.648 157.29 297.427 181 297.427C204.71 297.427 236.069 274.648 236.069 274.648C236.069 274.648 294.198 239.3 329.381 189.814C364.565 140.328 367.624 95.5541 347.738 54.7083C327.852 13.8624 294.198 1.29443 266.663 1.29443C239.129 1.29443 210.064 14.6479 180.235 48.4243C152.7 14.6479 122.871 1.29443 95.3365 1.29443Z"
+                                    stroke="#F10034" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-dasharray="15 15" id="heartPath" />
+                            </g>
+                        </svg>
+                        <div class="hero__end">
+                            <img src="./src/images/hero.jpg" alt="" class="hero__image" id="hero__image">
+                            <a href="" class="hero__end-button button" id="shining-button">
+                                <span class="margin-end-s">Play Video</span>
+                                <svg id="animated-svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_305_646)">
+                                        <path d="M12 10.64L17.27 14L12 17.36V10.64ZM10 7V21L21 14L10 7Z"
+                                            fill="#F10034" />
+                                    </g>
+                                    <rect x="1" y="1" width="26" height="26" rx="13" stroke="#F10034"
+                                        stroke-width="2" />
+                                    <defs>
+                                        <clipPath id="clip0_305_646">
+                                            <rect x="2" y="2" width="24" height="24" rx="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Who Are We section  -->
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Who Are We
+                    </h2>
+                    <p class="section__description font-size-h5">is an initiative under the auspices of the New Media
+                        Academy. It
+                        aims to amplify
+                        stories about PEOPLE, the EMIRATES, and the vibrant and diverse COMMUNITIES that thrive in
+                        it .....</p>
+                </div>
+                <div class="section__content section__content--icon">
+                    <img src="./src/images/Emirates Loves Team.jpg" alt="" class="section__image">
+                </div>
+            </section>
+            <!-- Types of Stories  -->
+            <section class="section section--horizontal section--linear">
+                <span class="section--linear__background"></span>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="section__header">
+                            <h2 class="section__title">
+                                Types of Stories
+                            </h2>
+                            <p class="section__description font-size-h5">is an initiative under the auspices of the New
+                                Media
+                                As Emirates loves we do cover a lot of types of stories , we are interested in anything
+                                would
+                                reach the world’s heart , here are some types ...</p>
+                            <a href="" class="hero__button button button--primary button--lg">Tell Us Your Story</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="row">
+                            <div class="col-md-6 margin-bottom-m">
+                                <div class="card">
+                                    <img src="./src/images/Symbol.svg" alt="" class="card__icon">
+                                    <a href="#" class="card__title">Humans Stories</a>
+                                    <p class="card__description">Videos that tell of people’s struggles and
+                                        achievements, that
+                                        evoke interest, sympathy,
+                                        happiness or inspiration to the viewers.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 margin-bottom-m">
+                                <div class="card">
+                                    <img src="./src/images/public.svg" alt="" class="card__icon">
+                                    <a href="#" class="card__title">Cities & Counties</a>
+                                    <p class="card__description">Bringing the world between your hands by showing you
+                                        magnificent places around the world , knowing their history and culture</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="./src/images/handshake.svg" alt="" class="card__icon">
+                                    <a href="#" class="card__title">Community Videos</a>
+                                    <p class="card__description">Videos that showcase the beauty of United Arab Emirates
+                                        and how the different communities thrive in the abundant diversity the Emirates
+                                        is offering.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="./src/images/familiar_face.svg" alt="" class="card__icon">
+                                    <a href="#" class="card__title">Hidden Talents</a>
+                                    <p class="card__description">we let you discover successful talents around the world
+                                        , that maybe living beside you , just next door !!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- WE REACHED A LOT oF Section -->
+            <section class="section section-reached">
+                <div class="section__header">
+                    <h2 class="section__title section__title--lg">
+                        we reached a lot of
+                        <span class="d-block text-primary text-uppercase">hearts!</span>
+                    </h2>
+                </div>
+                <div class="section__content section__content--center ">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div id="card-number" class="card-number margin-top-3xl">
+                                <div class="card-number__img">
+                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                </div>
+                                <div data-number="1320000" class="card-number__count"></div>
+                                <div class="card-number__title">Facebook</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="card-number" class="card-number margin-top-3xl">
+                                <div class="card-number__img">
+                                    <img src="/src/images/reached/insta.svg" alt="">
+                                </div>
+                                <div data-number="1320000" class="card-number__count"></div>
+                                <div class="card-number__title">Instagram</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="card-number" class="card-number margin-top-3xl">
+                                <div class="card-number__img">
+                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                </div>
+                                <div data-number="1400000" class="card-number__count"></div>
+                                <div class="card-number__title">Tiktok</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emojis">
+                    <img class="emoji-heart-left" src="/src/images/reached/heart.svg" alt="">
+                    <img class="emoji-heart-right" src="/src/images/reached/heart.svg" alt="">
+                    <img class="emoji-hug" src="/src/images/reached/hug.svg" alt="">
+                    <img class="emoji-hug--s" src="/src/images/reached/hug.svg" alt="">
+                    <img class="emoji-like" src="/src/images/reached/like.svg" alt="">
+                    <img class="emoji-like--s" src="/src/images/reached/like.svg" alt="">
+                </div>
+            </section>
+            <!-- Follow Us on All Platforms -->
+            <section class="section follow-us">
+                <div class="section__header">
+                    <h2 class="section__title section__title--lg">
+                        Follow Us on All Platforms
+                    </h2>
+                </div>
+                <div class="section__content">
+                    <div class="swiper-container">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/4.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook-2.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok-2.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/1.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/2.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/3.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/4.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/5.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/6.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/7.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/8.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/1.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/2.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/3.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/4.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/images/follow-us/5.jpg" alt="">
+                                <div class="share-card">
+                                    <div class="share-card__content">
+                                        <div class="share-card__title">
+                                            @EmirateslovesEgypt
+                                        </div>
+                                        <div class="">
+                                            <div class="share-card__social">
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/facebook.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/tiktok.svg" alt="">
+                                                </div>
+                                                <div class="share-card__icon">
+                                                    <img src="/src/images/reached/insta.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-card__heart">
+                                        <img src="/src/images/reached/channels4_profile 1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Latest from our events -->
+        <section class="section section-events">
+            <div class="container">
+                <h2 class="section__title section__title--lg">Latest from our events</h2>
+                <p class="section__description font-size-h5">Read updates to get insight into the Latest from our events
+                </p>
+            </div>
+            <div class="section__content padding-inline-start-m">
+                <div class="swiper mySwiper latest-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="event-card" role="link"
+                                onclick="window.location.href = 'https://www.instagram.com/newmediaacdmy/'">
+                                <figure class="event-card__image">
+                                    <img src="/src/images/latest1.png" alt="image" />
+                                </figure>
+                                <div class="event-card__content">
+                                    <div class="event-card__date">
+                                        <span>April 20, 2020</span>
+                                    </div>
+                                    <div class="event-card__title">
+                                        The 124th Philippine Independence Day!
+                                    </div>
+                                    <div class="event-card__location">
+                                        <div class="event-card__location-icon">
+                                            <svg viewBox="0 0 67 68" width="24px" height="24px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4994 0.666748H47.4994C58.166 0.666748 66.8327 9.33342 66.8327 20.0001V48.0001C66.8327 53.1276 64.7958 58.0451 61.1701 61.6708C57.5444 65.2965 52.6269 67.3334 47.4994 67.3334H19.4994C8.8327 67.3334 0.166031 58.6667 0.166031 48.0001V20.0001C0.166031 14.8726 2.20293 9.95505 5.82863 6.32935C9.45434 2.70365 14.3718 0.666748 19.4994 0.666748ZM18.8327 7.33341C15.6501 7.33341 12.5979 8.5977 10.3474 10.8481C8.09698 13.0986 6.8327 16.1508 6.8327 19.3334V48.6667C6.8327 55.3001 12.1994 60.6667 18.8327 60.6667H48.166C51.3486 60.6667 54.4009 59.4025 56.6513 57.152C58.9017 54.9016 60.166 51.8493 60.166 48.6667V19.3334C60.166 12.7001 54.7994 7.33341 48.166 7.33341H18.8327ZM50.9994 12.3334C52.1044 12.3334 53.1642 12.7724 53.9456 13.5538C54.727 14.3352 55.166 15.395 55.166 16.5001C55.166 17.6052 54.727 18.665 53.9456 19.4464C53.1642 20.2278 52.1044 20.6667 50.9994 20.6667C49.8943 20.6667 48.8345 20.2278 48.0531 19.4464C47.2717 18.665 46.8327 17.6052 46.8327 16.5001C46.8327 15.395 47.2717 14.3352 48.0531 13.5538C48.8345 12.7724 49.8943 12.3334 50.9994 12.3334ZM33.4994 17.3334C37.9196 17.3334 42.1589 19.0894 45.2845 22.215C48.4101 25.3406 50.166 29.5798 50.166 34.0001C50.166 38.4204 48.4101 42.6596 45.2845 45.7852C42.1589 48.9108 37.9196 50.6667 33.4994 50.6667C29.0791 50.6667 24.8399 48.9108 21.7143 45.7852C18.5886 42.6596 16.8327 38.4204 16.8327 34.0001C16.8327 29.5798 18.5886 25.3406 21.7143 22.215C24.8399 19.0894 29.0791 17.3334 33.4994 17.3334ZM33.4994 24.0001C30.8472 24.0001 28.3037 25.0536 26.4283 26.929C24.5529 28.8044 23.4994 31.3479 23.4994 34.0001C23.4994 36.6522 24.5529 39.1958 26.4283 41.0711C28.3037 42.9465 30.8472 44.0001 33.4994 44.0001C36.1515 44.0001 38.6951 42.9465 40.5704 41.0711C42.4458 39.1958 43.4994 36.6522 43.4994 34.0001C43.4994 31.3479 42.4458 28.8044 40.5704 26.929C38.6951 25.0536 36.1515 24.0001 33.4994 24.0001Z" />
+                                            </svg>
+                                        </div>
+                                        <a class="event-card__location-link"
+                                            href="https://www.instagram.com/newmediaacdmy/">instagram.com
+                                            newmediaacdmy/</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination2"></div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <!-- contact us -->
+            <section class="section padding-bottom-l">
+                <h2 class="section__title section__title--lg section__title--icon">You could be our next story</h2>
+                <p class="section__description font-size-h5">Please add you information so we can contact you.</p>
+                <div class="row reverse">
+                    <div class="col-md-5 col-12">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="" class="form-label">Full Name *</label>
+                                <input type="text" placeholder="Enter your full name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Email *</label>
+                                <input type="Email" placeholder="Enter your full name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="form-label">Country *</label>
+                                <input type="text" placeholder="Enter your full name" class="form-control">
+                            </div>
+                            <div class="form-group margin-bottom-l">
+                                <label for="" class="form-label">Story in Brief *</label>
+                                <textarea rows="4" placeholder="Enter a brief about your story"
+                                    class="form-control h-100"></textarea>
+                            </div>
+                            <button class="button button--lg button--primary button--block">Submit Your Story</button>
+                        </form>
+                    </div>
+                    <div class="col-md-7 col-12">
+                        <img src="./src/images/contact.jpg" alt="" class="contact__image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer margin-top-auto">
+        <div class="container">
+            <div class="main-footer__logo">
+                <a href="./">
+                    <img src="./src/images/footer-logo.svg" alt="" class="brand">
+                </a>
+            </div>
+            <div class="main-footer__container">
+                <div class="main-footer__start">
+                    <nav>
+                        <h2 class="sr-only">Footer Navigation</h2>
+                        <ul class="main-footer__nav">
+                            <li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Types of
+                                    Stories</a>
+                            </li>
+                            <li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Who are we</a>
+                            </li>
+                            <li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Events</a></li>
+                            <li class="main-footer__nav-item"><a href="#" class="main-footer__nav-link">Tell us your
+                                    story</a></li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-footer__end">
+                    <img src="./src/images/footer-logo-2.svg" alt="" class="brand brand--secondary">
+                </div>
+            </div>
+            <hr class="footer__break-line">
+            <div class="footer__bottom">
+                <ul class="footer__bottom-list">
+                    <li class="footer__bottom-list-item">Need Help?</li>
+                    <li class="footer__bottom-list-item">
+                        <img src="./src/images/phone.svg" alt="">
+                        <a href="" class="footer__bottom-link"> +971 4 702 7727</a>
+                    </li>
+                    <li class="footer__bottom-list-item">
+                        <img src="./src/images/mail.svg" alt="">
+                        <a href="" class="footer__bottom-link">info@nma.ae</a>
+                    </li>
+                    <li class="footer__bottom-list-item">
+                        <img src="./src/images/location.svg" alt="">
+                        <span> Emirates Towers, Trade Center Area, Dubai, U.A.E</span>
+                    </li>
+                    <li class="footer__bottom-list-item">
+                        <p class="main-footer__copy-rights">© 2023 by Emirates loves</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const burgerButton = document.getElementById('btnBurgerMenu');
+        const btnCloseMenu = document.getElementById('btnCloseMenu');
+        const globalNav = document.querySelector('.global-navigation');
+
+        burgerButton.addEventListener('click', () => {
+            globalNav.classList.add('global-navigation--opened');
+        });
+
+        btnCloseMenu.addEventListener('click', () => {
+            globalNav.classList.remove('global-navigation--opened');
+        });
+        var htmlTag = document.getElementById("lang");
+        function ar() {
+            htmlTag.removeAttribute("dir");
+            htmlTag.setAttribute("dir", "rtl");
+        }
+        function en() {
+            htmlTag.removeAttribute("dir");
+            htmlTag.setAttribute("dir", "ltr");
+        }
+    </script>
+    <script>
+        /*
+See https://www.greensock.com/splittext/ for details. 
+This demo uses SplitText which is a membership benefit of Club GreenSock, https://www.greensock.com/club/
+*/
+        gsap.registerPlugin(SplitText);
+
+        var tl = gsap.timeline(),
+            mySplitText = new SplitText("#quote", { type: "words,chars" }),
+            chars = mySplitText.chars; //an array of all the divs that wrap each character
+
+        gsap.set("#quote", { perspective: 400 });
+
+        console.log(chars);
+
+        tl.from(chars, {
+            duration: 1.5,
+            opacity: 0,
+            scale: 0,
+            y: 80,
+            rotationX: 180,
+            transformOrigin: "0% 50% -50",
+            ease: "back",
+            stagger: 0.05
+        });
+
+        document.getElementById("animate").onclick = function () {
+            tl.restart();
+        };
+
+        timeline.to(SplitText, { duration: 1.5, ease: 'power2.inOut' })
+            .to(hero__description, { duration: 2, ease: 'power2.inOut' })
+    </script>
+    <script>
+        // Get the image element
+        const image = document.getElementById('hero__image');
+
+        // Set initial position and scale
+        gsap.set(image, { x: '50%', scale: 0.5 });
+
+        // Create the animation
+        gsap.to(image, {
+            x: '0%',      // Move from left to right
+            scale: 1,     // Scale from small to big
+            duration: 1.5, // Animation duration in seconds
+            ease: 'power2.inOut', // Easing function
+        });
+    </script>
+    <script>
+        // Get the text element
+        const text = document.getElementById('hero__description');
+
+        // Set initial position and opacity
+        const lines = text.textContent.split('\n');
+
+        // Replace the content of the text element with span elements for each line
+        text.innerHTML = lines.map(line => `<span>${line}</span>`).join('');
+
+        // Get all the spans inside the text element
+        const spans = text.querySelectorAll('span');
+
+        // Set initial position and opacity
+        gsap.set(spans, { y: '100%', opacity: 0 });
+
+        // Create the animation
+        gsap.to(spans, {
+            y: '0%',   // Move from bottom to top
+            opacity: 1, // Fade in
+            duration: 1, // Animation duration in seconds
+            ease: 'power2.inOut', // Easing function
+            stagger: 0.3, // Stagger the animation for each span
+        });
+    </script>
+    <script>
+        // Get the button element
+        const button = document.getElementById('hero__button');
+
+        // Set initial scale
+        gsap.set(button, { scale: 0.1 });
+
+        gsap.to(button, {
+            scale: 1,   // Scale up
+            duration: 0.5, // Animation duration in seconds
+            ease: 'bounce.out', // Bounce easing function
+            yoyo: true, // Reverse the animation on repea
+        });
+    </script>
+    <script>
+        // arrow 
+        // Get the SVG paths
+        const path1 = document.getElementById('path1');
+        const path2 = document.getElementById('path2');
+        const path3 = document.getElementById('path3');
+
+        // Create a timeline
+        const timeline = gsap.timeline();
+
+        // Add tweens to the timeline
+        timeline.fromTo(path1, { y: -400 }, { y: 0, duration: 1, ease: 'power2.out' }, 0) // Start at 0 seconds
+            .fromTo(path2, { x: 400 }, { x: 0, duration: 1, ease: 'power2.out' }, 0) // Start at 0 seconds
+            .fromTo(path3, { y: 400 }, { y: 0, duration: 1, ease: 'power2.out', stagger: 0.04 }, 0); // Start at 0 seconds
+    </script>
+    <script>
+        // Get the button element
+        const buttonPlay = document.getElementById('shining-button');
+
+        // Create a timeline
+        const timelinePlay = gsap.timeline({ repeat: -1, yoyo: true });
+
+        // Add shining animations to the timeline
+        timeline.to(buttonPlay, { boxShadow: '0 0 10px 5px #f10034', duration: 0.5, ease: 'power2.inOut' })
+            .to(image, { boxShadow: '0 0 0 0 #f10034', duration: 0.5, ease: 'power2.inOut' })
+            .to(buttonPlay, { boxShadow: '0 0 0 0 #f10034', duration: 0.5, ease: 'power2.inOut' })
+
+    </script>
+    <script>
+        // Get the path element
+        const myHeartPath = document.getElementById('heartPath');
+
+        // Get the total length of the path
+        const heartPathLength = myHeartPath.getTotalLength();
+
+        // Set initial style
+        gsap.set(myHeartPath, { strokeDasharray: heartPathLength, strokeDashoffset: heartPathLength });
+
+        // Create the animation timeline
+        const heartAnimation = gsap.timeline();
+
+        // Add animations to the timeline
+        heartAnimation.to(myHeartPath, { strokeDashoffset: 0, duration: 2, ease: 'power2.inOut' });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/scripts/follow-us-swiper.js"></script>
+    <script src="/src/scripts/events.js"></script>
+    <script src="/src/scripts/scripts.js"></script>
+    <script src="/src/scripts/convert-number.js"></script>
+
+
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/CustomEase.min.js"></script>
+</body>
+
+</html>

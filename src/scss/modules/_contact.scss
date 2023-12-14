@@ -1,0 +1,28 @@
+.contact {
+
+  input,
+  textarea {
+    margin-bottom: var(--space-m);
+  }
+
+  form button {
+    margin-inline-start: auto;
+    margin-inline-end: 0;
+    display: block;
+    padding: var(--space-base);
+  }
+
+  p {
+    color: var(--color-shade-26);
+  }
+
+  h2 {
+    color: var(--color-primary);
+    font-size: var(--font-size-xxxl);
+  }
+}
+
+.contact__image {
+  width: 100%;
+  height: fit-content;
+}

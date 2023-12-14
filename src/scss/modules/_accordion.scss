@@ -1,0 +1,123 @@
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-base);
+  border-bottom: 1px solid #DCE0E3;
+  margin-bottom: var(--space-base);
+}
+
+.accordion__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-base);
+  border-bottom: 1px solid #DCE0E3;
+  margin-bottom: var(--space-base);
+}
+
+.accordion__title {
+  color: var(--color-black-2);
+  margin: var(--space-none);
+  font-weight: 400;
+}
+
+.accordion__header {
+  display: flex;
+}
+
+.accordion__circle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  margin-right: var(--space-base);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  margin-top: 10px;
+}
+
+.accordion__image {
+  margin-right: var(--space-base);
+}
+
+.accordion__button {
+  cursor: pointer;
+  border: 3px solid var(--color-primary-darken);
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 7px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.accordion__button::after {
+  content: "\002B";
+  background-color: transparent;
+  color: var(--color-primary-darken);
+  transition: .4s;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-self: center;
+  font-weight: bold;
+}
+
+.accordion-button-icon::after {
+  content: "\2212";
+}
+
+.accordion__brief {
+  padding: var(--space-none);
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  background-color: var(--color-neutral-0);
+  overflow: hidden;
+  text-align: left;
+  padding-left: var(--space-base);
+  transition: all .35s;
+}
+
+.accordion-breif-show {
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+  height: fit-content;
+  padding: var(--space-m);
+}
+
+.according__link button {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-neutral-0);
+  padding: 10px 30px;
+  border-radius: var(--border-radius-soft);
+}
+
+.active::after {
+  content: "\2212";
+  background-color: transparent;
+  color: var(--color-primary-darken);
+  transition: .4s;
+  font-size: 30px;
+  height: 45px;
+  display: flex;
+  justify-self: center;
+}
+
+.accordion__title-wrapper {
+  @include breakpoint(isCommon) {
+    max-width: 80%;
+  }
+}

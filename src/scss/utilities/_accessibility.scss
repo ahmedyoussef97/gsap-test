@@ -1,0 +1,59 @@
+/* Accessibility Styles */ 
+.has-accessible-features a:focus {
+    background-color: var(--color-focus-outer);
+    box-shadow: 0 2px var(--color-focus-inner);
+    color: var(--color-neutral-10);
+}
+
+.has-accessible-features a:focus,
+.has-accessible-features a:focus:hover {
+    text-decoration: none;    
+}
+
+.has-accessible-features a[disabled] {
+    color: var(--color-neutral-6);
+}
+/* Accessibility Styles */
+.has-accessible-features [data-checkbox]:before {
+    border-color: var(--color-neutral-7);    
+}
+
+.has-accessible-features [data-checkbox]:hover:before {
+    border-color: var(--color-neutral-8);     
+}
+
+.has-accessible-features [data-checkbox]:checked:before {
+    border-color: var(--color-primary);
+}
+
+.has-accessible-features [data-checkbox]:focus:before {
+    border-color: var(--color-focus-inner); 
+}
+
+.has-accessible-features [data-checkbox] {
+    border-radius: var(--border-radius-soft);    
+}
+
+/* Accessibility Styles */ 
+.has-accessible-features [data-switch]:empty:before {
+    border-color: var(--color-neutral-7);
+    background-color: var(--color-neutral-7);
+}
+
+.has-accessible-features [data-switch]:hover:before {
+    border-color: var(--color-neutral-8);
+    background-color: var(--color-neutral-8);    
+}
+
+.has-accessible-features [data-switch]:checked:before {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);    
+}
+
+.has-accessible-features [data-switch]:focus:before {
+    border-color: var(--color-focus-inner);
+}
+
+.has-accessible-features [data-switch] {
+    border-radius: var(--border-radius-rounded);
+}

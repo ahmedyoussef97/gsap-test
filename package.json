@@ -1,0 +1,29 @@
+{
+  "name": "getedara",
+  "version": "1.0.0",
+  "description": "getedara HTML",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.1",
+    "live-server": "^1.2.1",
+    "merge-stream": "1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "5.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-imagemin": "5.0.3",
+    "gulp-minify": "3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "0.6.1",
+    "gulp-webp": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aliigamall",
+  "license": "ISC"
+}

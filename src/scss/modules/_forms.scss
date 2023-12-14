@@ -1,0 +1,40 @@
+﻿.form-control {
+    border-radius: 8px;
+    height: 56px;
+
+    &::placeholder {
+        color: #9A9A9A;
+    }
+}
+
+textarea {
+    height: 100% !important;
+}
+
+.form-group {
+    margin-bottom: var(--space-m);
+
+    @include breakpoint(isCommon) {
+        margin-bottom: var(--space-m);
+    }
+}
+
+.button--form {
+    height: 100%;
+
+    @include breakpoint(isCommon) {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+.form-group {
+    text-align: start;
+}
+
+[dir="rtl"] {
+    .form-group {
+        direction: rtl;
+    }
+}

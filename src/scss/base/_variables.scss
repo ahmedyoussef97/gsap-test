@@ -1,0 +1,114 @@
+:root {
+    // Typography - Size 
+    --font-size-display: 36px;
+    --font-size-h1: 32px;
+    --font-size-h2: 28px;
+    --font-size-h3: 26px;
+    --font-size-h4: 22px;
+    --font-size-h5: 20px;
+    --font-size-h6: 18px;
+    --font-size-xs: 12px;
+    --font-size-2xs: 8px;
+    --font-size-s: 14px;
+    --font-size-base: 16px;
+    --font-size-l: 32px;
+    --font-size-xl: 42px;
+    --font-size-xxl: 48px;
+    --font-size-xxxl: 64px;
+
+    // Typography - Weight 
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+
+    --color-focus-outer: #FFD337;
+    --color-focus-inner: var(--color-neutral-10);
+
+
+    // Space - Sizes 
+    --space-none: 0;
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-base: 16px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+    --space-3xl: 54px;
+    --space-4xl: 64px;
+
+    // Border Radius 
+    --border-radius-none: 0;
+    --border-radius-soft: 8px;
+    --border-radius-base: 16px;
+    --border-radius-m: 20px;
+    --border-radius-rounded: 100px;
+    --border-radius-circle: 100%;
+
+    // Border Size 
+    --border-size-none: 0;
+    --border-size-s: 1px;
+    --border-size-m: 2px;
+    --border-size-l: 3px;
+
+    // Elevation / Shadow 
+    --shadow-none: none;
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, .1);
+    --shadow-s: 0 2px 4px rgba(0, 0, 0, .1);
+    --shadow-m: 0 4px 6px rgba(0, 0, 0, .1);
+    --shadow-l: 0 6px 8px rgba(0, 0, 0, .1);
+    --shadow-xl: 0 8px 10px rgba(0, 0, 0, .1);
+
+    // App Settings 
+    --header-color: #ffffff;
+    --color-background-body: #f3f6f8;
+    --color-background-login: #ffffff;
+    --header-size: 56px;
+    --header-size-content: 48px;
+    --side-menu-size: 300px;
+    --bottom-bar-size: 56px;
+
+    // iOS Safe Areas (Notch Support) 
+    --os-safe-area-top: env(safe-area-inset-top);
+    --os-safe-area-right: env(safe-area-inset-right);
+    --os-safe-area-bottom: env(safe-area-inset-bottom);
+    --os-safe-area-left: env(safe-area-inset-left);
+}
+
+//== images path
+$img-path: "../images";
+$font-path: "../fonts";
+
+$screen-xs: 0 !default;
+$screen-sm: 576px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1367px !default;
+$screen-wd: 1600px !default;
+
+$breakpoints: (
+    xs: 480px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px,
+    xlst: 1920px
+);
+$max-breakpoints: (
+    xs: 479px,
+    sm: 575px,
+    md: 767px,
+    lg: 991px,
+    xl: 1199px,
+    xxl: 1599px
+);
+
+$youtubeClr: #bf232b;
+$twitterClr: #2aaae0;
+$facebookClr: #3a589b;
+$linkedinClr: #0e76a8;
+$whatsappClr: #0dc143;
+$instagramGradient: linear-gradient(40deg, rgb(249, 237, 50) 0%, rgb(238, 42, 123) 69%, rgb(0, 42, 255) 100%);

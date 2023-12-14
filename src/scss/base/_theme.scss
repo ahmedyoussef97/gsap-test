@@ -1,0 +1,55 @@
+:root {
+    --font-family: 'Graphik Trial';
+
+    // Header
+    --header-bg: #fff;
+    --footer-bg: #fff;
+
+    // Color - Navbar
+    --color-navbar: var(--color-black-4);
+    --color-navbar--hover: var(--color-primary);
+}
+
+[dir="rtl"] {
+    --font-family: 'FF Shamel Family';
+}
+
+$colors: (
+    "primary": "#F10034",
+    "primary-darken": "#F10034",
+    "primary-hover": "#333",
+    "primary-selected": "rgba(20, 110, 245, .12)",
+    "primary-lightest": "linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9))",
+
+    "secondary": "#008948",
+    "secondary-darken": "#008948",
+
+    "gray": "#575756",
+    "gray-1": "#9A9A9A",
+
+    "orange-0": "#F16722",
+    "orange-1": "#ED2529",
+
+    "light-blue-0": "#3FD4F0",
+
+    "green-0": "#32A071",
+
+    "white-0": "#FFFFFF",
+    "white-1": "#FAFAFA",
+    "white-2": "#F3F3F3",
+    "white-3": "#F7FAFA",
+    "white-4": "#F2F2F2",
+
+    "black-0": "#000",
+    "black-1": "#50555C",
+    "black-2": "#616161",
+    "black-3": "#F9F9F9",
+    "black-4": "#333333",
+
+    "light-blue": "#0075bf",
+
+    "dark-blue": "#101013",
+    "dark-blue-1": "#002f50"
+);
+
+@include colors-variation($colors);

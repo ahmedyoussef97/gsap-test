@@ -1,0 +1,44 @@
+.change-language {
+    position: relative;    
+}
+
+.change-language__current {
+    color: rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.change-language__caret {
+    fill: rgba(0, 0, 0, 0.54);
+}
+
+.change-language__list {
+    position: absolute;
+    visibility: hidden;
+    #{$end}: 0;
+    opacity: 0;
+    padding: 0;
+    width: 140px;
+    list-style: none;
+    margin-bottom: 0;
+    background-color: #fff;
+    @include transition();
+}
+
+.change-language:hover {
+    .change-language__list {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.change-language__list-item {
+    display: block;
+    padding: 5px;
+
+    &:hover {
+        text-decoration: none;
+        background-color: #eee;
+    }
+}

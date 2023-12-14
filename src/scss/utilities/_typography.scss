@@ -1,0 +1,78 @@
+:root{
+    @each $weight, $value in $font-weights {
+        --font-#{$weight} : #{$value};
+    }
+}
+@each $weight, $value in $font-weights {
+    .font-#{$weight}{
+        font-weight: var(--font-#{$weight}) !important;
+    }
+}
+
+.font-size-display {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading4 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading5 {
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.heading6 {
+    font-size: var(--font-size-h6);
+    font-weight: var(--font-regular);
+    line-height: 1.25;
+    margin-bottom: .5em;
+}
+
+.font-size-base { font-size: var(--font-size-base) !important; line-height: 1.5;}
+.font-size-s { font-size: var(--font-size-s) !important; line-height: 1.5;}
+.font-size-xs { font-size: var(--font-size-xs) !important; line-height: 1.5;}
+
+.text-lowercase { text-transform: lowercase; }
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize { text-transform: capitalize; }
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bold { font-weight: var(--font-bold); }
+
+.text-center{text-align: center;}
+.text-start{text-align: start;}
+.text-end{text-align: end;}

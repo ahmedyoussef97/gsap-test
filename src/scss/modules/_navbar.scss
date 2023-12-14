@@ -1,0 +1,148 @@
+.navbar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 calc(-1 * var(--space-base));
+
+  @media only screen and (max-width: 770px) {
+    flex-direction: column;
+  }
+
+  li {
+    display: flex;
+    position: relative;
+  }
+
+  a {
+    color: var(--color-navbar);
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    padding: var(--space-xs) var(--space-base);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    letter-spacing: -0.03em;
+
+    @include breakpoint(isCommon) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: var(--space-base) var(--space-s);
+    }
+
+    &:hover {
+      color: var(--color-navbar--hover);
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+.navbar__item {
+  display: flex;
+  position: relative;
+}
+
+[dir="rtl"] {
+  .navbar__item--en {
+    display: flex;
+  }
+
+  .navbar__item--ar {
+    display: none;
+
+  }
+}
+
+[dir="ltr"] {
+  .navbar__item--ar {
+    display: flex;
+  }
+
+  .navbar__item--en {
+    display: none;
+
+  }
+}
+
+.navbar__link {
+  color: var(--color-navbar);
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+  padding: var(--space-xs) var(--space-base);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -0.03em;
+
+  @include breakpoint(isCommon) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: var(--space-base) var(--space-s);
+  }
+
+  &:hover {
+    color: var(--color-navbar--hover);
+    text-decoration: none;
+  }
+}
+
+
+.global-navigation {
+  @include breakpoint(isCommon) {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    background: var(--color-neutral-0);
+    padding: var(--space-base);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    transform: scale(.98);
+    transition: all .3s ease-in-out;
+  }
+
+  &--opened {
+    @include breakpoint(isCommon) {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
+
+.global-navigation__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-l);
+
+  @media only screen and (min-width: 770px) {
+    display: none;
+  }
+}
+
+.button--header-end {
+  margin-inline-start: var(--space-m);
+
+  @include breakpoint(isCommon) {
+    margin-inline-start: var(--space-none);
+    margin-top: var(--space-base);
+  }
+}
+
+.navbar__item--ar button {
+  font-family: 'FF Shamel Family';
+}
+
+.button--header-end {
+  a {
+    padding: 0;
+  }
+}

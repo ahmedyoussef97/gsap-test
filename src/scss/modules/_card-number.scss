@@ -1,0 +1,98 @@
+.card-number__count {
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-xxxl);
+    color: var(--color-primary);
+    margin-top: var(--space-l);
+
+    @include breakpoint(isCommon) {
+        font-size: var(--font-size-xxl);
+    }
+
+    &:before {
+        content: '+';
+        font-weight: var(--font-black);
+        font-size: var(--font-size-xxxl);
+        color: var(--color-primary);
+
+        @include breakpoint(isCommon) {
+            font-size: var(--font-size-xxl);
+        }
+    }
+}
+
+.card-number__title {
+    font-weight: var(--font-regular);
+    font-size: var(--font-size-h1);
+    color: var(--color-dark-blue-1);
+    margin-top: var(--space-s);
+}
+
+
+
+.emoji-heart-left {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+
+.emoji-heart-right {
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+
+.emoji-hug {
+    position: absolute;
+    top: 85%;
+    left: 29%;
+
+    &--s {
+        position: absolute;
+        top: 48%;
+        right: 27%;
+        width: 57px;
+        height: 57px;
+    }
+}
+
+.emoji-like {
+    position: absolute;
+    top: 45%;
+    left: -2%;
+
+    &--s {
+        position: absolute;
+        top: 70%;
+        right: -5%;
+        width: 57px;
+        height: 57px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    // .card-number{
+    //     margin-top: var(--space-3xl);
+    // } 
+    .emojis {
+        display: none;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .emoji-heart-left {
+        top: 26%;
+        left: 10%;
+    }
+}
+
+.card-number {
+    @include breakpoint(isCommon) {
+        margin-top: var(--space-m);
+    }
+}

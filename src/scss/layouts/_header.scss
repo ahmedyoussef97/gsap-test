@@ -1,0 +1,27 @@
+.main-header {
+    padding-top: var(--space-m);
+    padding-bottom: var(--space-m);
+    background-color: var(--header-bg);
+
+    .brand {
+        @include breakpoint(isCommon) {
+            width: 120px;
+        }
+    }
+}
+
+.main-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header__burger-menu {
+    @media only screen and (min-width: 770px) {
+        display: none;      
+      }
+}
+
+.main-header--no-background {
+    background: none;
+}

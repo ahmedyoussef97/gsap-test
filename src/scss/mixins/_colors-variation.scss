@@ -1,0 +1,19 @@
+@mixin colors-variation($colors, $prefix: "") {
+    :root {
+        @each $label, $color in $colors {
+            --color-#{$label}: #{$color};
+        }
+    }
+    
+    @each $label, $color in $colors {
+        .text#{$prefix}-#{$label} {
+            color: #{$color} !important;
+        }
+    }
+    
+    @each $label, $color in $colors {
+        .background#{$prefix}-#{$label} {
+            background-color: #{$color} !important;
+        }
+    }
+}
