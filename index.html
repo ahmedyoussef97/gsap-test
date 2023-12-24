@@ -18,6 +18,9 @@
     <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/CSSRulePlugin.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body class="body--flex">
@@ -142,7 +145,22 @@
                         it .....</p>
                 </div>
                 <div class="section__content section__content--icon">
-                    <img src="./src/images/Emirates Loves Team.jpg" alt="" class="section__image">
+                    <div class="container">
+                        <div class="cards">
+                            <div class="card__image">
+                                <img src="./src/images/1.jpg" alt="" class="section__image" id="scalingImage">
+                            </div>
+                            <div class="card__image">
+                                <img src="./src/images/2.jpg" alt="" class="section__image" id="scalingImage">
+                            </div>
+                            <div class="card__image">
+                                <img src="./src/images/3.jpg" alt="" class="section__image" id="scalingImage">
+                            </div>
+                            <div class="card__image">
+                                <img src="./src/images/we.jpg" alt="" class="section__image" id="scalingImage">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Types of Stories  -->
@@ -855,6 +873,16 @@
             </section>
         </div>
     </main>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="./src/images/we.jpg" alt="Front Image">
+            </div>
+            <div class="back">
+                <!-- Back content if needed -->
+            </div>
+        </div>
+    </div>
     <footer class="main-footer margin-top-auto">
         <div class="container">
             <div class="main-footer__logo">
@@ -906,6 +934,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        gsap.registerPlugin(CSSPlugin);
+
+        const flipper = document.querySelector('.flipper');
+
+        flipper.addEventListener('mouseenter', () => {
+            gsap.to(flipper, { duration: 0.5, rotationY: 180 });
+        });
+
+        flipper.addEventListener('mouseleave', () => {
+            gsap.to(flipper, { duration: 0.5, rotationY: 0 });
+        });
+
+    </script>
     <script>
         const burgerButton = document.getElementById('btnBurgerMenu');
         const btnCloseMenu = document.getElementById('btnCloseMenu');
@@ -1060,6 +1102,43 @@ This demo uses SplitText which is a membership benefit of Club GreenSock, https:
         heartAnimation.to(myHeartPath, { strokeDashoffset: 0, duration: 2, ease: 'power2.inOut' });
 
     </script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        let cards = gsap.utils.toArray(".card__image");
+        let stackHeight = window.innerHeight * 0.25;
+        console.log(gsap.utils.checkPrefix("filter"))
+        cards.forEach((card, i) => {
+            gsap.fromTo(card.querySelector("img"), {
+                scale: 1,
+                transformOrigin: "center top",
+                filter: "blur(0px)",
+            }, {
+                y: gsap.utils.mapRange(1, cards.length, -20, -stackHeight + 20, cards.length - i),
+                scale: gsap.utils.mapRange(1, cards.length, 0.4, 0.9, i),
+                filter: "blur(" + gsap.utils.mapRange(1, cards.length, 4, 25, cards.length - i) + "px)",
+                scrollTrigger: {
+                    trigger: card,
+                    markers: true,
+                    scrub: true,
+                    start: "top " + stackHeight,
+                    end: "+=" + window.innerHeight * 2,
+                    invalidateOnRefresh: true
+                }
+            });
+            // pin separately because we want the pinning to last the whole length of the page, but the animation should only be part of it. 
+            ScrollTrigger.create({
+                trigger: card,
+                pin: true,
+                start: "top " + stackHeight,
+                endTrigger: ".following-content", // when the last card finishes its animation, unpin everything
+                end: "top " + (stackHeight + 100),
+                pinSpacing: false
+            });
+        });
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
     </script>
@@ -1069,6 +1148,7 @@ This demo uses SplitText which is a membership benefit of Club GreenSock, https:
     <script src="/src/scripts/scripts.js"></script>
     <script src="/src/scripts/convert-number.js"></script>
 
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
 
     <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EasePack.min.js"></script>
